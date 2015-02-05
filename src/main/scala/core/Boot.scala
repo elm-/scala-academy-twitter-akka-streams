@@ -16,52 +16,22 @@ object Boot extends App {
   implicit val system = ActorSystem()
   implicit val ec = system.dispatcher
 
-  val twitterPublisherActor = system.actorOf(Props(new TwitterPublisherActor()))
-  val twitterStreamActor = system.actorOf(Props(new TweetStreamerActor(TweetStreamerActor.twitterUri, twitterPublisherActor) with OAuthTwitterAuthorization))
-
-  twitterStreamActor ! "tomcat"
-
   implicit val materializer = FlowMaterializer()
 
-  val errorCounterJson = new AtomicLong()
-  val errorCounterFormat = new AtomicLong()
 
-
-  val out = Sink.foreach[(Long, Seq[Tweet])] { case (timestamp, event) =>
-    println(event(0).user.url)
-    println((errorCounterJson.get(), errorCounterFormat.get()))
-    println((new Date(timestamp), event.size))
+  val out = Sink.foreach[Int] { value =>
+    println(value)
   }
 
-  val src = Source(ActorPublisher[HttpData.NonEmpty](twitterPublisherActor))
+  val src = Source(() => List(1,2,3,4,5).iterator)
+
 
   val materialized = FlowGraph { implicit builder =>
     import FlowGraphImplicits._
 
-    val validateJson = Flow[HttpData.NonEmpty].filter(e => {
-      try {
-        val json = e.asString.parseJson
-        try {
-          json.convertTo[Tweet]
-          true
-        } catch {
-          case ex: Exception =>
-            //println(json)
-            errorCounterFormat.incrementAndGet()
-            false
-        }
-      } catch {
-        case ex: Exception =>
-          errorCounterJson.incrementAndGet()
-          false
-      }
-    })
-    val convert = Flow[HttpData.NonEmpty].map(e => {
-      e.asString.parseJson.convertTo[Tweet]
-    })
-    val count = Flow[Tweet].groupedWithin(10000, 5.seconds).map(tweets => (System.currentTimeMillis(), tweets))
+    val modify = Flow[Int].map(v => v * 2)
 
-    src ~> validateJson ~> convert ~> count ~> out
+    src ~> modify ~> out
   }.run()
 
   materialized.get(out).onComplete {
