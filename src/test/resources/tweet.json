@@ -1,0 +1,375 @@
+{
+  "coordinates": null,
+  "retweeted": false,
+  "source": "<a href=\"http://twitter.com/#!/download/ipad\" rel=\"nofollow\">Twitter for iPad</a>",
+  "entities": {
+    "user_mentions": [
+      {
+        "name": "Scott Hoying",
+        "screen_name": "scotthoying",
+        "indices": [
+          3,
+          15
+        ],
+        "id_str": "14810162",
+        "id": 14810162
+      },
+      {
+        "name": "Kelley Jakle",
+        "screen_name": "kelleyjakle",
+        "indices": [
+          24,
+          36
+        ],
+        "id_str": "36293537",
+        "id": 36293537
+      },
+      {
+        "name": "#PitchPerfect2",
+        "screen_name": "PitchPerfect",
+        "indices": [
+          38,
+          51
+        ],
+        "id_str": "344384150",
+        "id": 344384150
+      }
+    ],
+    "urls": [],
+    "symbols": [],
+    "media": [
+      {
+        "expanded_url": "http://twitter.com/PitchPerfect/status/562796657235222528/photo/1",
+        "source_status_id": 562796657235222528,
+        "indices": [
+          105,
+          127
+        ],
+        "url": "http://t.co/d5SirWi7pF",
+        "media_url": "http://pbs.twimg.com/media/B890k8zIUAArCBe.png",
+        "id_str": "562796656589295616",
+        "id": 562796656589295616,
+        "media_url_https": "https://pbs.twimg.com/media/B890k8zIUAArCBe.png",
+        "sizes": {
+          "thumb": {
+            "w": 150,
+            "h": 150,
+            "resize": "crop"
+          },
+          "small": {
+            "w": 340,
+            "h": 170,
+            "resize": "fit"
+          },
+          "large": {
+            "w": 1024,
+            "h": 512,
+            "resize": "fit"
+          },
+          "medium": {
+            "w": 600,
+            "h": 300,
+            "resize": "fit"
+          }
+        },
+        "type": "photo",
+        "source_status_id_str": "562796657235222528",
+        "display_url": "pic.twitter.com/d5SirWi7pF"
+      }
+    ],
+    "hashtags": [
+      {
+        "text": "PitchPerfect2",
+        "indices": [
+          89,
+          103
+        ]
+      }
+    ],
+    "trends": []
+  },
+  "favorite_count": 0,
+  "in_reply_to_status_id_str": null,
+  "geo": null,
+  "id_str": "563108763058446336",
+  "in_reply_to_user_id": null,
+  "timestamp_ms": "1423090565825",
+  "truncated": false,
+  "text": "RT @scotthoying: ur hot @kelleyjakle “@PitchPerfect: The countdown is on. 100 days until #PitchPerfect2! http://t.co/d5SirWi7pF”",
+  "retweet_count": 0,
+  "retweeted_status": {
+    "coordinates": null,
+    "retweeted": false,
+    "source": "<a href=\"http://twitter.com/download/iphone\" rel=\"nofollow\">Twitter for iPhone</a>",
+    "entities": {
+      "user_mentions": [
+        {
+          "name": "Kelley Jakle",
+          "screen_name": "kelleyjakle",
+          "indices": [
+            7,
+            19
+          ],
+          "id_str": "36293537",
+          "id": 36293537
+        },
+        {
+          "name": "#PitchPerfect2",
+          "screen_name": "PitchPerfect",
+          "indices": [
+            21,
+            34
+          ],
+          "id_str": "344384150",
+          "id": 344384150
+        }
+      ],
+      "urls": [],
+      "symbols": [],
+      "media": [
+        {
+          "expanded_url": "http://twitter.com/PitchPerfect/status/562796657235222528/photo/1",
+          "source_status_id": 562796657235222528,
+          "indices": [
+            88,
+            110
+          ],
+          "url": "http://t.co/d5SirWi7pF",
+          "media_url": "http://pbs.twimg.com/media/B890k8zIUAArCBe.png",
+          "id_str": "562796656589295616",
+          "id": 562796656589295616,
+          "media_url_https": "https://pbs.twimg.com/media/B890k8zIUAArCBe.png",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 340,
+              "h": 170,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1024,
+              "h": 512,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 600,
+              "h": 300,
+              "resize": "fit"
+            }
+          },
+          "type": "photo",
+          "source_status_id_str": "562796657235222528",
+          "display_url": "pic.twitter.com/d5SirWi7pF"
+        }
+      ],
+      "hashtags": [
+        {
+          "text": "PitchPerfect2",
+          "indices": [
+            72,
+            86
+          ]
+        }
+      ],
+      "trends": []
+    },
+    "favorite_count": 5,
+    "in_reply_to_status_id_str": "562796657235222528",
+    "geo": null,
+    "id_str": "563108733908447235",
+    "in_reply_to_user_id": 344384150,
+    "truncated": false,
+    "text": "ur hot @kelleyjakle “@PitchPerfect: The countdown is on. 100 days until #PitchPerfect2! http://t.co/d5SirWi7pF”",
+    "retweet_count": 8,
+    "id": 563108733908447235,
+    "in_reply_to_status_id": 562796657235222528,
+    "possibly_sensitive": false,
+    "filter_level": "low",
+    "created_at": "Wed Feb 04 22:55:58 +0000 2015",
+    "place": null,
+    "favorited": false,
+    "lang": "en",
+    "contributors": null,
+    "in_reply_to_screen_name": "PitchPerfect",
+    "in_reply_to_user_id_str": "344384150",
+    "user": {
+      "utc_offset": -21600,
+      "name": "Scott Hoying",
+      "friends_count": 6001,
+      "screen_name": "scotthoying",
+      "location": "LA",
+      "protected": false,
+      "url": "http://youtube.com/sup3rfruit",
+      "profile_image_url": "http://pbs.twimg.com/profile_images/542017418881540096/GvZcoJs4_normal.jpeg",
+      "profile_background_color": "1A1B1F",
+      "profile_use_background_image": true,
+      "is_translator": false,
+      "geo_enabled": true,
+      "description": "1/5 @ptxofficial, 1/2 @sup3rfruit; Beyonce called me flawless once.",
+      "profile_link_color": "2FC2EF",
+      "id_str": "14810162",
+      "listed_count": 1422,
+      "default_profile_image": false,
+      "followers_count": 328168,
+      "profile_image_url_https": "https://pbs.twimg.com/profile_images/542017418881540096/GvZcoJs4_normal.jpeg",
+      "profile_sidebar_border_color": "181A1E",
+      "profile_background_image_url": "http://abs.twimg.com/images/themes/theme9/bg.gif",
+      "favourites_count": 8219,
+      "following": null,
+      "default_profile": false,
+      "id": 14810162,
+      "profile_background_tile": false,
+      "contributors_enabled": false,
+      "follow_request_sent": null,
+      "created_at": "Sat May 17 12:06:04 +0000 2008",
+      "profile_sidebar_fill_color": "252429",
+      "lang": "en",
+      "profile_text_color": "666666",
+      "notifications": null,
+      "verified": true,
+      "time_zone": "Central Time (US & Canada)",
+      "profile_banner_url": "https://pbs.twimg.com/profile_banners/14810162/1418061955",
+      "statuses_count": 19706,
+      "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme9/bg.gif"
+    },
+    "extended_entities": {
+      "media": [
+        {
+          "expanded_url": "http://twitter.com/PitchPerfect/status/562796657235222528/photo/1",
+          "source_status_id": 562796657235222528,
+          "indices": [
+            88,
+            110
+          ],
+          "url": "http://t.co/d5SirWi7pF",
+          "media_url": "http://pbs.twimg.com/media/B890k8zIUAArCBe.png",
+          "id_str": "562796656589295616",
+          "id": 562796656589295616,
+          "media_url_https": "https://pbs.twimg.com/media/B890k8zIUAArCBe.png",
+          "sizes": {
+            "thumb": {
+              "w": 150,
+              "h": 150,
+              "resize": "crop"
+            },
+            "small": {
+              "w": 340,
+              "h": 170,
+              "resize": "fit"
+            },
+            "large": {
+              "w": 1024,
+              "h": 512,
+              "resize": "fit"
+            },
+            "medium": {
+              "w": 600,
+              "h": 300,
+              "resize": "fit"
+            }
+          },
+          "type": "photo",
+          "source_status_id_str": "562796657235222528",
+          "display_url": "pic.twitter.com/d5SirWi7pF"
+        }
+      ]
+    }
+  },
+  "id": 563108763058446336,
+  "in_reply_to_status_id": null,
+  "possibly_sensitive": false,
+  "filter_level": "low",
+  "created_at": "Wed Feb 04 22:56:05 +0000 2015",
+  "place": null,
+  "favorited": false,
+  "lang": "en",
+  "contributors": null,
+  "in_reply_to_screen_name": null,
+  "in_reply_to_user_id_str": null,
+  "user": {
+    "utc_offset": null,
+    "name": "Lindsey Davis",
+    "friends_count": 1049,
+    "screen_name": "lindseyd643",
+    "location": "",
+    "protected": false,
+    "url": null,
+    "profile_image_url": "http://pbs.twimg.com/profile_images/560581409438330880/lrs6VBtd_normal.jpeg",
+    "profile_background_color": "C0DEED",
+    "profile_use_background_image": true,
+    "is_translator": false,
+    "geo_enabled": false,
+    "description": "Mitch Grassi is queen. Boop Boop. I am a huge Pentaholic, and i love to watch Sup3rfruit videos. My life goal is to meet the one and only, Mitch Grassi❤️",
+    "profile_link_color": "0084B4",
+    "id_str": "2473171051",
+    "listed_count": 0,
+    "default_profile_image": false,
+    "followers_count": 334,
+    "profile_image_url_https": "https://pbs.twimg.com/profile_images/560581409438330880/lrs6VBtd_normal.jpeg",
+    "profile_sidebar_border_color": "C0DEED",
+    "profile_background_image_url": "http://abs.twimg.com/images/themes/theme1/bg.png",
+    "favourites_count": 1402,
+    "following": null,
+    "default_profile": true,
+    "id": 2473171051,
+    "profile_background_tile": false,
+    "contributors_enabled": false,
+    "follow_request_sent": null,
+    "created_at": "Thu May 01 23:30:54 +0000 2014",
+    "profile_sidebar_fill_color": "DDEEF6",
+    "lang": "en",
+    "profile_text_color": "333333",
+    "notifications": null,
+    "verified": false,
+    "time_zone": null,
+    "profile_banner_url": "https://pbs.twimg.com/profile_banners/2473171051/1422822647",
+    "statuses_count": 1120,
+    "profile_background_image_url_https": "https://abs.twimg.com/images/themes/theme1/bg.png"
+  },
+  "extended_entities": {
+    "media": [
+      {
+        "expanded_url": "http://twitter.com/PitchPerfect/status/562796657235222528/photo/1",
+        "source_status_id": 562796657235222528,
+        "indices": [
+          105,
+          127
+        ],
+        "url": "http://t.co/d5SirWi7pF",
+        "media_url": "http://pbs.twimg.com/media/B890k8zIUAArCBe.png",
+        "id_str": "562796656589295616",
+        "id": 562796656589295616,
+        "media_url_https": "https://pbs.twimg.com/media/B890k8zIUAArCBe.png",
+        "sizes": {
+          "thumb": {
+            "w": 150,
+            "h": 150,
+            "resize": "crop"
+          },
+          "small": {
+            "w": 340,
+            "h": 170,
+            "resize": "fit"
+          },
+          "large": {
+            "w": 1024,
+            "h": 512,
+            "resize": "fit"
+          },
+          "medium": {
+            "w": 600,
+            "h": 300,
+            "resize": "fit"
+          }
+        },
+        "type": "photo",
+        "source_status_id_str": "562796657235222528",
+        "display_url": "pic.twitter.com/d5SirWi7pF"
+      }
+    ]
+  }
+}
