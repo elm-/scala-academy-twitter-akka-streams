@@ -12,6 +12,12 @@ import scala.concurrent.duration._
 import scala.util._
 import spray.json._
 
+trait Result
+
+case class Done(tweet: Tweet) extends Result
+case class InvalidJson(text: String, error: Exception) extends Result
+case class InvalidTweet(json: JsValue, error: Exception) extends Result
+
 object Boot extends App {
   implicit val system = ActorSystem()
   implicit val ec = system.dispatcher
@@ -37,31 +43,26 @@ object Boot extends App {
 
   val materialized = FlowGraph { implicit builder =>
     import FlowGraphImplicits._
-
-    val validateJson = Flow[HttpData.NonEmpty].filter(e => {
+    
+    val convert = Flow[HttpData.NonEmpty].map(e => {
+      val jsonString = e.asString 
       try {
-        val json = e.asString.parseJson
+        val json = jsonString.parseJson
         try {
-          json.convertTo[Tweet]
-          true
+          Done(json.convertTo[Tweet])
         } catch {
           case ex: Exception =>
-            //println(json)
-            errorCounterFormat.incrementAndGet()
-            false
+            InvalidTweet(json, ex)
         }
       } catch {
         case ex: Exception =>
-          errorCounterJson.incrementAndGet()
-          false
+            InvalidJson(jsonString, ex)
       }
     })
-    val convert = Flow[HttpData.NonEmpty].map(e => {
-      e.asString.parseJson.convertTo[Tweet]
-    })
+    val collect = Flow[Result].collect{ case Done(tweet) => tweet }
     val count = Flow[Tweet].groupedWithin(10000, 5.seconds).map(tweets => (System.currentTimeMillis(), tweets))
 
-    src ~> validateJson ~> convert ~> count ~> out
+    src ~> convert ~> collect ~> count ~> out
   }.run()
 
   materialized.get(out).onComplete {
